@@ -1,11 +1,11 @@
 # Library-Management-System
-Project Description
+#Project Description
 This project is a library management system implemented in C++ using object-oriented programming. It allows managing information about books, users (readers and administrators), and loans in a library. Administrators can add and remove books and manage loans, while readers can browse available books and request loans.
 
-Context
+#Context
 Library management is a common task in many educational and community institutions. This system helps automate part of that process, improving efficiency and reducing the possibility of human errors. I chose this project because it involves key object-oriented programming concepts such as inheritance and polymorphism, while providing a practical solution to a real-world problem. The modular structure of the code also makes it easy to expand the system to include new features in the future.
 
-Project Structure
+#Project Structure
 The system is organized into classes, each with specific responsibilities:
 
 Book: Represents a book in the library and stores information such as the title, author, ISBN, and status (available or on loan).
