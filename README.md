@@ -29,9 +29,12 @@ Features
 Book Management: Allows adding and removing books from the library.
 
 Loans: Readers can request loans for available books and return them when they are done.
-![image](https://github.com/user-attachments/assets/f482ff0d-59a4-4b9b-895a-497e7c1eb9cf)
-
 
 Book Search: Users can browse the list of available books in the library.
 
 User Management: Differentiates between readers and administrators to assign permissions.
+
+
+UML class diagram. 
+
+![image](https://github.com/user-attachments/assets/f482ff0d-59a4-4b9b-895a-497e7c1eb9cf)
