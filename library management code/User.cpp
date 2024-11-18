@@ -1,7 +1,7 @@
 #include "User.h"
 
-User::User(const std::string& name) : name(name) {}
+User::User(std::string name) : name(name) {}
 
-std::string User::getName() const {
+std::string User::getName() {
     return name;
 }

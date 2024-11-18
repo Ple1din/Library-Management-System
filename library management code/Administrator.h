@@ -7,10 +7,9 @@
 
 class Administrator : public User {
 public:
-    Administrator(const std::string& name);
-    std::string getUserType() const override;
-    void addBook(std::vector<Book>& books, const Book& book);
-    void removeBook(std::vector<Book>& books, const std::string& isbn);
+    Administrator(std::string name);
+    void addBook(std::vector<Book> books, Book book);
+    void removeBook(std::vector<Book> books, std::string isbn);
 };
 
 #endif

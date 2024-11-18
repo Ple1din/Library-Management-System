@@ -5,11 +5,11 @@
 
 class Book {
 public:
-    Book(const std::string& title, const std::string& author, const std::string& isbn);
-    std::string getTitle() const;
-    std::string getAuthor() const;
-    std::string getISBN() const;
-    bool isAvailable() const;
+    Book(std::string title, std::string author, std::string isbn);
+    std::string getTitle();
+    std::string getAuthor();
+    std::string getISBN();
+    bool isAvailable();
     void setAvailable(bool available);
 
 private:

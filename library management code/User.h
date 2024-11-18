@@ -5,10 +5,8 @@
 
 class User {
 public:
-    User(const std::string& name);
-    virtual ~User() = default;
-    std::string getName() const;
-    virtual std::string getUserType() const = 0;
+    User(std::string name);
+    std::string getName();
 
 protected:
     std::string name;
