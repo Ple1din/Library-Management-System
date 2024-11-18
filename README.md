@@ -37,4 +37,4 @@ User Management: Differentiates between readers and administrators to assign per
 
 UML class diagram. 
 
-![image](https://github.com/user-attachments/assets/f482ff0d-59a4-4b9b-895a-497e7c1eb9cf)
+![library management dagram drawio](https://github.com/user-attachments/assets/ddf6b340-a00b-43f1-af49-0c4b91f567d1)
