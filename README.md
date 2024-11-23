@@ -1,40 +1,80 @@
-# Library-Management-System
+Library Management System
+
 Project Description
 
-This project is a library management system implemented in C++ using object-oriented programming. It allows managing information about books, users (readers and administrators), and loans in a library. Administrators can add and remove books and manage loans, while readers can browse available books and request loans.
-
+This project is a library management system developed in C++ using object-oriented programming (OOP). It provides tools for managing books, users (readers and administrators), and loans in a library. Administrators have permissions to add, remove, and manage books and loans, while readers can browse available books and request or return loans.
 
 Context
 
-Library management is a common task in many educational and community institutions. This system helps automate part of that process, improving efficiency and reducing the possibility of human errors. I chose this project because it involves key object-oriented programming concepts such as inheritance and polymorphism, while providing a practical solution to a real-world problem. The modular structure of the code also makes it easy to expand the system to include new features in the future.
+Library management is essential in educational and community institutions, where efficient organization is key. This project automates processes to improve efficiency, minimize human errors, and ensure scalability for future enhancements. It serves as a practical example of applying OOP concepts, such as inheritance, composition, and polymorphism, while addressing real-world needs.
 
 
-#Project Structure
+Project Structure
 
-The system is organized into classes, each with specific responsibilities:
+The system follows a modular structure and adheres to coding standards to ensure readability, maintainability, and scalability. Key classes and their responsibilities include:
 
-Book: Represents a book in the library and stores information such as the title, author, ISBN, and status (available or on loan).
+Book: Represents books in the library, storing attributes such as title, author, ISBN, and availability status.
 
-User: Base class representing system users.
+User: Base class for library users, storing shared attributes like name.
 
 Reader: Inherits from User and represents users who can request and return books.
 
-Administrator: Inherits from User and represents users with permissions to add and remove books, as well as manage loans.
+Administrator: Inherits from User and represents users with administrative privileges to manage books and loans.
 
-Library: Contains the list of books and users, and manages loan and return operations.
-
+Library: Manages the collection of books and oversees operations such as book loans and returns.
 
 Features
 
-Book Management: Allows adding and removing books from the library.
-
-Loans: Readers can request loans for available books and return them when they are done.
-
-Book Search: Users can browse the list of available books in the library.
-
-User Management: Differentiates between readers and administrators to assign permissions.
+Book Management
 
 
-UML class diagram. 
+Administrators can add or remove books from the library's collection.
 
-![library management dagram drawio](https://github.com/user-attachments/assets/ddf6b340-a00b-43f1-af49-0c4b91f567d1)
+
+Loan Management
+
+
+Readers can borrow available books and return them when finished.
+
+The system automatically updates book availability status.
+
+Book Search
+
+
+Users can search for books by ISBN and view details like title, author, and availability.
+
+User Permissions
+
+Differentiates between readers and administrators to assign appropriate permissions.
+Usage
+
+
+Execution
+
+Compile the program using a C++ compiler (e.g., g++) and run the resulting executable in a terminal.
+
+Navigate through the menu options to perform actions like adding books, borrowing books, and managing loans.
+Requirements
+
+C++ compiler supporting C++11 or later.
+
+Basic understanding of terminal/command-line usage.
+
+What the Project Can Do
+
+Efficiently manage a collection of books.
+
+Enforce user permissions for library operations.
+
+Ensure accurate tracking of book availability.
+
+What the Project Cannot Do
+
+Does not handle advanced user authentication.
+
+Does not support concurrent operations (e.g., multiple users interacting simultaneously).
+
+Does not include a graphical user interface (GUI).
+
+![library management dagram drawio](https://github.com/user-attachments/assets/0a6c32d6-800a-4bf8-a55f-23e7cd8ec071)
+
