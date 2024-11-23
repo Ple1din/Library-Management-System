@@ -3,18 +3,18 @@
 
 Administrator::Administrator(std::string name) : User(name) {}
 
-void Administrator::addBook(std::vector<Book> books, Book book) {
+std::string Administrator::addBook(std::vector<Book> books, Book book) {
     books.push_back(book);
-    std::cout << book.getTitle() << " added to the library by " << name << std::endl;
+    return book.getTitle() + " added to the library by " + name;
 }
 
-void Administrator::removeBook(std::vector<Book> books, std::string isbn) {
+std::string Administrator::removeBook(std::vector<Book> books, std::string isbn) {
     for (auto it = books.begin(); it != books.end(); ++it) {
         if (it->getISBN() == isbn) {
-            std::cout << it->getTitle() << " removed by " << name << std::endl;
+            std::string msg = it->getTitle() + " removed by " + name;
             books.erase(it);
-            return;
+            return msg;
         }
     }
-    std::cout << "Book with ISBN " << isbn << " not found." << std::endl;
+    return "Book with ISBN " + isbn + " not found.";
 }

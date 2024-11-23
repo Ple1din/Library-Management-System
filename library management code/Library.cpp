@@ -14,15 +14,16 @@ void Library::removeBook(std::string isbn) {
     }
 }
 
-void Library::listBooks() {
-    for (int i = 0; i < books.size(); i++) {
-        Book book = books[i];
-        std::cout << "Title: " << book.getTitle() << ", Author: " << book.getAuthor()
-                  << ", ISBN: " << book.getISBN() << ", Available: "
-                  << (book.isAvailable() ? "Yes" : "No") << std::endl;
+std::vector<std::string> Library::listBooks() {
+    std::vector<std::string> bookDetails;
+    for ( auto book : books) {
+        bookDetails.push_back("Title: " + book.getTitle() + ", Author: " + book.getAuthor() +
+                              ", ISBN: " + book.getISBN() + ", Available: " +
+                              (book.isAvailable() ? "Yes" : "No"));
     }
+    return bookDetails;
 }
 
-std::vector<Book> Library::getBooks() {
+std::vector<Book>& Library::getBooks() {
     return books;
 }

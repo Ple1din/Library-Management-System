@@ -3,6 +3,19 @@
 Book::Book(std::string title, std::string author, std::string isbn)
     : title(title), author(author), isbn(isbn), available(true) {}
 
+void Book::setAuthor(std::string author) {
+    this->author = author;
+}
+
+void Book::setTitle(std::string title) {
+    this->title = title;
+}
+
+
+void Book::setIsbn(std::string isbn) {
+    this->isbn = isbn;
+}
+
 std::string Book::getTitle() {
     return title;
 }
